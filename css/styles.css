@@ -10,6 +10,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ /*! My Notes on this File:
+ * This picks the color for each component of the website. It's done in theme, but you can change the colors individually here.
+ *
+ *
+ */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10825,8 +10831,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* This changes the background of the whole website */
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/spaceBG.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
