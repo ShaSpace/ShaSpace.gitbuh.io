@@ -17,6 +17,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
+    <!-- NOTE: What's in quotes is a reference to the styles.css file.-->
+    <!-- NOTE cont: The styles file has the format, and this file uses the format. If you want to create a new format... -->
+    <!-- NOTE cont: then you have to create a format within the styles file and then come back here to reference it.-->
     <body>
         <header>
             <!-- This the header at the top of the page -->
@@ -49,23 +53,70 @@
 
         <!-- PRE EDIT: The intro section of the site with the photo and text box -->
         <!-- Concept Section of Homepage: -->
-        <section class="page-section concept-images clearfix">
+        <section class="page-section clearfix">
             <div class="container"> <!-- A container with no breakpoints meaning that the width is constant for its entirety -->
-                <div class="concept">
-                    <img class="concept-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
-                    <div class="concept-text left-0 text-center bg-faded p-5 rounded">
+                <div class="intro">
+                    <!-- Attempting to have images in a row-->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <img class="img-fluid" src="assets/img/placeholder1.png"  alt="..." />
+                        </li>
+                        <li class="list-group-item">
+                            <img class="img-fluid" src="assets/img/placeholder2.png"  alt="..." />
+                        </li>
+                        <li class="list-group-item">
+                            <img class="img-fluid" src="assets/img/placeholder3.png"  alt="..." />
+                        </li>
+                    </ul>
+                    
+                    <!-- Commenting the following out so the website doesn't get muddy
+                        Keeping it in case what I wrote doesn't work
+                    -->
+                    <!--
+                        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
                         <h2 class="section-heading mb-4">
-                            <!-- Text box next to the image on the home page -->
+                            Text box next to the image on the home page
                             <span class="section-heading-upper">Fresh Coffee</span>
                             <span class="section-heading-lower">Worth Drinking</span>
                         </h2>
                         <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
-                        <div class="concept-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+                    </div>
+                    -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Sections -->
+        <!-- Each Project gets its own section-->
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-01.jpg" alt="..." />
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded">
+                            <p class="mb-0">Junior year of undergrad, my team and I designed a plant monitoring system. It checked for tempurature, light, and soil moisture.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Project 2: -->
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-02.jpg" alt="..." />
+                    <div class="product-item-description d-flex ms-auto">
+                        <div class="bg-faded p-5 rounded">
+                            <p class="mb-0">Junior year of undergrad, my team and I designed a plant monitoring system. It checked for tempurature, light, and soil moisture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Text box section -->
         <section class="page-section cta">
             <div class="container">
