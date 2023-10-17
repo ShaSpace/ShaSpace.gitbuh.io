@@ -11042,9 +11042,16 @@ p {
   white-space: nowrap;/*Keeps the text on a single line*/
   margin: 0 auto;/*Creates the scrolling effect*/
   letter-spacing: 0.15em;/*Em is an unit relative to the font size*/
+  border-right: .15em solid white; /*The actual cursor*/
   animation:
     typing 4s steps(44) 1s 1 normal both,
     blinking-cursor 500ms steps(44) infinite normal;
+}
+
+/*Background color for the type writer*/
+.typewriter-bg{
+  --bs-bg-opacity:1;
+  background-color: rgba(7, 22, 50, var(--bs-bg-opacity));
 }
 
 /* Setting up the keyframes for the Animation:*/

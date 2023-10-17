@@ -55,8 +55,10 @@
         <!-- Section 0: Really Serves as an Intro to overtake the current heading&navbar -->
         <section class="page-section">
             <div class="containter">
-                <p class="typewriter">Make Your Dreams A Reality...</p><!--Type writing animation on slogan-->
-                <div class="fade"><h2>Sha'Lynn Clarke</h2></div>
+                <div class="typewriter-bg">
+                    <p class="typewriter text-white text-start"><h3>Make Your Dreams A Reality...</h3></p><!--Type writing animation on slogan-->
+                    <p class="fade show text-gray-600 text-start"><h2>Sha'Lynn Clarke</h2></p>
+                </div>
             </div>
         </section>
 
@@ -132,9 +134,9 @@
                 <!-- Personal Section just basic facts -->
             <div class="row">
                 <div class="col">
-                    <p class="text-start">Sha'Lynn Clarke</p>
-                    <p class="text-start">22 years old</p>
-                    <p class="text-start">they/them</p>
+                    <p class="text-start fs-3">Sha'Lynn Clarke</p>
+                    <p class="text-start fs-3">22 years old</p>
+                    <p class="text-start fs-3">they/them</p>
                 </div>
                 <div class="col-6">
                     <img src="assets/img/placeholder1.png"/>
@@ -171,20 +173,26 @@
         </div>
         <!-- Navigation Options at the Bottom of Page-->
         <section class="page-section">
-            <!-- Clickable Images -->
-            <div class="row">
-                <!-- Concepts Button-->
-                <div class="col"><a href="store.html"><img src="assets/img/placeholder1.png" alt="..."></a></div>
-                <!-- Projects Button-->
-                <div class="col"><a href="products.html"><img src="assets/img/placeholder2.png" alt="..."></a></div>
-                <!-- About Me Button-->
-                <div class="col"><a href="about.html"><img src="assets/img/placeholder3.png" alt="..."></a></div>
-            </div>
-            <!-- Labels for the buttons-->
-            <div class="row">
-                <div class="col"><p class="text-center">Concepts</p></div>
-                <div class="col"><p class="text-center">Projects</p></div>
-                <div class="col"><p class="text-center">About Me</p></div>
+            <!-- Setting up the grid: -->
+            <div class="gird gap-3">
+                <!-- Clickable Images -->
+                <div class="row">
+                    <div class="w-25"> <!-- Sizing the Button -->
+                            <!-- Concepts Button-->
+                        <div class="col"><a href="store.html"><img src="assets/img/placeholder1.png" class="rounded-circle" alt="..."></a></div>
+                        <!-- Projects Button-->
+                        <div class="col"><a href="products.html"><img src="assets/img/placeholder2.png" class="rounded-circle" alt="..."></a></div>
+                        <!-- About Me Button-->
+                        <div class="col"><a href="about.html"><img src="assets/img/placeholder3.png" class="rounded-circle" alt="..."></a></div>
+                    </div>
+                </div>
+               
+                <!-- Labels for the buttons-->
+                <div class="row">
+                    <div class="col"><p class="text-center">Concepts</p></div>
+                    <div class="col"><p class="text-center">Projects</p></div>
+                    <div class="col"><p class="text-center">About Me</p></div>
+                </div>
             </div>
         </section>
     </section>
