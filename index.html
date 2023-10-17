@@ -50,8 +50,16 @@
         </nav>
 
         <!-- The following splits up the webiste into different sections -->
-
         <!-- PRE EDIT: The intro section of the site with the photo and text box -->
+
+        <!-- Section 0: Really Serves as an Intro to overtake the current heading&navbar -->
+        <section class="page-section">
+            <div class="containter">
+                <p class="typewriter">Make Your Dreams A Reality...</p><!--Type writing animation on slogan-->
+                <div class="fade"><h2>Sha'Lynn Clarke</h2></div>
+            </div>
+        </section>
+
         <!-- Concept Section of Homepage: -->
         <section class="page-section clearfix">
             <div class="container"> <!-- A container with no breakpoints meaning that the width is constant for its entirety -->
@@ -117,9 +125,72 @@
                 </div>
             </div>
         </section>
+   
+        <!-- About Me Section of Homepage -->
+        <section class="page-section">
+            <div class="container">
+                <!-- Personal Section just basic facts -->
+            <div class="row">
+                <div class="col">
+                    <p class="text-start">Sha'Lynn Clarke</p>
+                    <p class="text-start">22 years old</p>
+                    <p class="text-start">they/them</p>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/placeholder1.png"/>
+                </div>
+                <!-- Nothing on the right side of the picture -->
+                <div class="col"></div>
+            </div>
+                <!-- Engineering Aspects of me-->
+            <div class="row">
+                <!-- No text to the left of the image -->
+                <div class="col"></div>
+                <div class="col-6">
+                    <img src="assets/img/placeholder2.png"/>
+                </div>
+                <div class="col">
+                    <p class="text-end">Electrical & Computer Engineer</p>
+                    <p class="text-end">Graduated from Rowan University 2023 cum Laude</p>
+                    <p class="text-end">Sensor, Unity, and Software Work</p>
+                </div>
+            </div>
+                <!-- Artistic Aspects of me -->
+            <div class="row">
+                <div class="col">
+                    <p class="text-start">I do my own animatics</p>
+                    <p class="text-start">I create pieces in Blender</p>
+                    <p class="text-start">I draw, paint, design</p>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/placeholder3.png"/>
+                </div>
+                <!-- No text to the right of the image -->
+                <div class="col"></div>
+            </div>
+        </div>
+        <!-- Navigation Options at the Bottom of Page-->
+        <section class="page-section">
+            <!-- Clickable Images -->
+            <div class="row">
+                <!-- Concepts Button-->
+                <div class="col"><a href="store.html"><img src="assets/img/placeholder1.png" alt="..."></a></div>
+                <!-- Projects Button-->
+                <div class="col"><a href="products.html"><img src="assets/img/placeholder2.png" alt="..."></a></div>
+                <!-- About Me Button-->
+                <div class="col"><a href="about.html"><img src="assets/img/placeholder3.png" alt="..."></a></div>
+            </div>
+            <!-- Labels for the buttons-->
+            <div class="row">
+                <div class="col"><p class="text-center">Concepts</p></div>
+                <div class="col"><p class="text-center">Projects</p></div>
+                <div class="col"><p class="text-center">About Me</p></div>
+            </div>
+        </section>
+    </section>
 
-        
-        <!-- Text box section -->
+        <!--Following Section isn't needed in final so it will be commented out:
+         Text box section:
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
@@ -135,9 +206,12 @@
                 </div>
             </div>
         </section>
+        -->        
+        
+
 
         <!-- The end of the page with the copyright -->
-        <footer class="footer text-faded text-center py-1">
+        <footer class="footer text-faded text-center py-2">
             <!-- Website/Company at the bottom of the page next to the Copyright -->
             <div class="container"><p class="m-0 small">Copyright &copy; ShaSpace 2023</p></div>
         </footer>
