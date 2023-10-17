@@ -11034,3 +11034,26 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+/* Typewriter Animation: */
+/* Formatting the Text&Line:*/
+.typewriter h3{
+  overflow:hidden; /*Makes sure that the text doesn't show before it is typed*/
+  white-space: nowrap;/*Keeps the text on a single line*/
+  margin: 0 auto;/*Creates the scrolling effect*/
+  letter-spacing: 0.15em;/*Em is an unit relative to the font size*/
+  animation:
+    typing 4s steps(44) 1s 1 normal both,
+    blinking-cursor 500ms steps(44) infinite normal;
+}
+
+/* Setting up the keyframes for the Animation:*/
+@keyframes typing{
+  from{width: 0;}
+  to{width: 24em;}
+}
+
+@keyframes blinking-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
