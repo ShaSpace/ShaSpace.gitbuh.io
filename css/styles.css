@@ -10833,7 +10833,7 @@ textarea.form-control-lg {
 }
 /* This changes the background of the whole website */
 body {
-  background-image: /*linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)),*/ url("../assets/img/spaceBG.jpg");
+  background-image: linear-gradient(90deg, rgba(2,0,36,30) 0%, rgba(1,98,137,30) 74%, rgba(0,212,255,30) 100%), url("../assets/img/spaceBG.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -11009,6 +11009,13 @@ p {
     margin-top: -3rem;
     max-width: 50vw;
   }
+
+  /* The following provides another option for the product description, it moves it up to the top of the img*/
+  .product-item .product-item-description-up{
+    position: relative;
+    z-index: 1;
+    margin-top: -10rem;
+  }
 }
 
 .list-hours {
@@ -11044,13 +11051,13 @@ p {
   letter-spacing: 0.15em;/*Em is an unit relative to the font size*/
   border-right: .15em solid white; /*The actual cursor*/
   animation:
-    typing 4s steps(44) 1s 1 normal both,
-    blinking-cursor 500ms steps(44) infinite normal;
+    typing 4s steps(44, end),
+    blinking-cursor 500ms steps(44) infinite;
 }
 
 /*Background color for the type writer*/
 .typewriter-bg{
-  --bs-bg-opacity:1;
+  --bs-bg-opacity:0.45;
   background-color: rgba(7, 22, 50, var(--bs-bg-opacity));
 }
 
@@ -11064,3 +11071,17 @@ p {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+/* Explore Button Image Configurations: */
+.circular-landscape { 
+  display: inline-block; 
+  position: relative; 
+  width: 200px; /* The width and height cuts the image into a square */
+  height: 200px; 
+  overflow: hidden; /* Makes sure that the part that was cut off doesn't show */
+  border-radius: 50%; } /* Makes the image into a circle */
+
+.circular-landscape img { 
+  width: auto; 
+  height: 100%; 
+  margin-left: -50px; } /* This shifts the center of the circle of the landscape picture */

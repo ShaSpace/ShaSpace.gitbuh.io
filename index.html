@@ -53,20 +53,52 @@
         <!-- PRE EDIT: The intro section of the site with the photo and text box -->
 
         <!-- Section 0: Really Serves as an Intro to overtake the current heading&navbar -->
-        <section class="page-section">
+        <section class="page-section mb-5">
             <div class="containter">
                 <div class="typewriter-bg">
-                    <p class="typewriter text-white text-start"><h3>Make Your Dreams A Reality...</h3></p><!--Type writing animation on slogan-->
-                    <p class="fade show text-gray-600 text-start"><h2>Sha'Lynn Clarke</h2></p>
-                </div>
+                    <div class="typewriter text-white text-start">
+                    <h3>
+                        Make Your Dreams a Reality...
+                    </h3>  
+                    </div>
+                    <h2 class="fade-show text-white text-start">
+                        Sha'Lynn Clarke
+                    </h2>
+                  </div>
             </div>
         </section>
 
         <!-- Concept Section of Homepage: -->
-        <section class="page-section clearfix">
+        <section class="page-section clearfix mb-5">
             <div class="container"> <!-- A container with no breakpoints meaning that the width is constant for its entirety -->
                 <div class="intro">
-                    <!-- Attempting to have images in a row-->
+                    <!-- Carouseling the Images to shuffle through -->
+                    <div id="conceptRotation" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-item active">
+                           <div  class="carousel-item"> 
+                            <img src="assets/img/placeholder1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/placeholder2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/placeholder3.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#conceptRotation" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#conceptRotation" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+
+
+
+                    <!-- Attempting to have images in a row
                     <ul class="list-group list-group-horizontal">
                         <li class="list-group-item">
                             <img class="img-thumbnail" src="assets/img/placeholder1.png"  alt="..." />
@@ -78,22 +110,8 @@
                             <img class="img-thumbnail" src="assets/img/placeholder3.png"  alt="..." />
                         </li>
                     </ul>
+                    -->
                     
-                    <!-- Commenting the following out so the website doesn't get muddy
-                        Keeping it in case what I wrote doesn't work
-                    -->
-                    <!--
-                        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            Text box next to the image on the home page
-                            <span class="section-heading-upper">Fresh Coffee</span>
-                            <span class="section-heading-lower">Worth Drinking</span>
-                        </h2>
-                        <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
-                    </div>
-                    -->
                     
                 </div>
             </div>
@@ -101,11 +119,11 @@
 
         <!-- Project Sections -->
         <!-- Each Project gets its own section-->
-        <section class="page-section">
+        <section class="page-section mb-5">
             <div class="container">
                 <div class="product-item">
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-01.jpg" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
+                    <div class="product-item-description-up d-flex me-auto">
                         <div class="bg-faded p-5 rounded">
                             <p class="mb-0">Junior year of undergrad, my team and I designed a plant monitoring system. It checked for tempurature, light, and soil moisture.</p>
                         </div>
@@ -115,11 +133,11 @@
         </section>
 
         <!-- Project 2: -->
-        <section class="page-section">
+        <section class="page-section mb-5">
             <div class="container">
                 <div class="product-item">
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-02.jpg" alt="..." />
-                    <div class="product-item-description d-flex ms-auto">
+                    <div class="product-item-description-up d-flex ms-auto">
                         <div class="bg-faded p-5 rounded">
                             <p class="mb-0">Junior year of undergrad, my team and I designed a plant monitoring system. It checked for tempurature, light, and soil moisture.</p>
                         </div>
@@ -129,17 +147,17 @@
         </section>
    
         <!-- About Me Section of Homepage -->
-        <section class="page-section">
+        <section class="page-section mb-5">
             <div class="container">
                 <!-- Personal Section just basic facts -->
             <div class="row">
-                <div class="col">
-                    <p class="text-start fs-3">Sha'Lynn Clarke</p>
-                    <p class="text-start fs-3">22 years old</p>
-                    <p class="text-start fs-3">they/them</p>
+                <div class="col d-flex justify-content-center">
+                    <p class="text-start fs-3 text-bg-light">Sha'Lynn Clarke</p>
+                    <p class="text-start fs-3 text-bg-light">22 years old</p>
+                    <p class="text-start fs-3 text-bg-light">they/them</p>
                 </div>
-                <div class="col-6">
-                    <img src="assets/img/placeholder1.png"/>
+                <div class="col">
+                    <img src="assets/img/placeholder1.png" class="img-fluid">
                 </div>
                 <!-- Nothing on the right side of the picture -->
                 <div class="col"></div>
@@ -147,37 +165,39 @@
                 <!-- Engineering Aspects of me-->
             <div class="row">
                 <!-- No text to the left of the image -->
-                <div class="col"></div>
-                <div class="col-6">
-                    <img src="assets/img/placeholder2.png"/>
+                <div class="col"></div> 
+                <div class="col d-flex justify-content-center">
+                    <img src="assets/img/placeholder2.png" class="img-fluid"/>
                 </div>
                 <div class="col">
-                    <p class="text-end">Electrical & Computer Engineer</p>
-                    <p class="text-end">Graduated from Rowan University 2023 cum Laude</p>
-                    <p class="text-end">Sensor, Unity, and Software Work</p>
+                    <p class="text-end fs-3 text-bg-light">Electrical & Computer Engineer</p>
+                    <p class="text-end fs-3 text-bg-light">Graduated from Rowan University 2023 cum Laude</p>
+                    <p class="text-end fs-3 text-bg-light">Sensor, Unity, and Software Work</p>
                 </div>
             </div>
                 <!-- Artistic Aspects of me -->
             <div class="row">
-                <div class="col">
-                    <p class="text-start">I do my own animatics</p>
-                    <p class="text-start">I create pieces in Blender</p>
-                    <p class="text-start">I draw, paint, design</p>
+                <div class="col d-flex justify-content-center">
+                    <p class="text-start fs-3 text-bg-light">I do my own animatics</p>
+                    <p class="text-start fs-3 text-bg-light">I create pieces in Blender</p>
+                    <p class="text-start fs-3 text-bg-light">I draw, paint, design</p>
                 </div>
-                <div class="col-6">
-                    <img src="assets/img/placeholder3.png"/>
+                <div class="col">
+                    <img src="assets/img/placeholder3.png" class="img-fluid"/>
                 </div>
                 <!-- No text to the right of the image -->
                 <div class="col"></div>
             </div>
         </div>
+        
+        
         <!-- Navigation Options at the Bottom of Page-->
-        <section class="page-section">
+        <section class="page-section mb-5">
             <!-- Setting up the grid: -->
             <div class="gird gap-3">
                 <!-- Clickable Images -->
                 <div class="row">
-                    <div class="w-25"> <!-- Sizing the Button -->
+                    <div class="circular-landscape"> <!-- Sizing the Button -->
                             <!-- Concepts Button-->
                         <div class="col"><a href="store.html"><img src="assets/img/placeholder1.png" class="rounded-circle" alt="..."></a></div>
                         <!-- Projects Button-->
@@ -189,34 +209,14 @@
                
                 <!-- Labels for the buttons-->
                 <div class="row">
-                    <div class="col"><p class="text-center">Concepts</p></div>
-                    <div class="col"><p class="text-center">Projects</p></div>
-                    <div class="col"><p class="text-center">About Me</p></div>
+                    <div class="col"><p class="text-center text-white fs-3 fw-bold">Concepts</p></div>
+                    <div class="col"><p class="text-center text-white fs-3 fw-bold">Projects</p></div>
+                    <div class="col"><p class="text-center text-white fs-3 fw-bold">About Me</p></div>
                 </div>
             </div>
         </section>
-    </section>
-
-        <!--Following Section isn't needed in final so it will be commented out:
-         Text box section:
-        <section class="page-section cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper">Our Promise</span>
-                                <span class="section-heading-lower">To You</span>
-                            </h2>
-                            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->        
+    </section>    
         
-
 
         <!-- The end of the page with the copyright -->
         <footer class="footer text-faded text-center py-2">
