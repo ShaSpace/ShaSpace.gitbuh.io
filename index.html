@@ -22,30 +22,30 @@
     <!-- NOTE cont: The styles file has the format, and this file uses the format. If you want to create a new format... -->
     <!-- NOTE cont: then you have to create a format within the styles file and then come back here to reference it.-->
     <body>
+        <!-- I don't think I'll have a header in the final website
         <header>
-            <!-- This the header at the top of the page -->
+            This the header at the top of the page 
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
                 <span class="site-heading-upper text-primary mb-3">Make Your Dreams A Reality</span>
                 <span class="site-heading-lower">Sha'Lynn Clarke</span>
             </h1>
         </header>
+        -->
         <!-- Navigation Bar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-lg-5" id="mainNav">
-            <div class="container">
-                <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Sha Space</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        
-                        <!-- These classes define the tabs of the website ie: HOME, ABOUT, PROJECTS, CONCEPTS, CONTACT -->
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="products.html">Projects</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="store.html">Concepts</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar fixed-top navbar-dark py-lg-5" id="mainNav">
+            <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
+            <a class="navbar-brand text-uppercase fw-bold ps-5" href="index.html">Sha Space</a>
+            <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <!-- These classes define the tabs of the website ie: HOME, ABOUT, PROJECTS, CONCEPTS, CONTACT -->
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="products.html">Projects</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="store.html">Concepts</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -57,26 +57,27 @@
             <div class="containter">
                 <div class="typewriter-bg">
                     <div class="typewriter text-white text-start">
-                    <h3 class="display-2">
-                        Make Your Dreams a Reality...
-                    </h3>  
+                        <h3 class="display-2">
+                            Let Your Ambitions Be Infinite,
+                            Make Your Dreams A Reality...
+                        </h3>  
                     </div>
-                    <h2 class="display-1 text-white text-start">
-                        Sha'Lynn Clarke
+                    <h2 class="display-1 fst-italics text-white text-start">
+                        Sha Space
                     </h2>
                   </div>
             </div>
         </section>
 
         <!-- Concept Section of Homepage: -->
-        <section class="page-section clearfix mb-5">
+        <section class="page-section clearfix mb-5 mt-2">
             <div class="container"> <!-- A container with no breakpoints meaning that the width is constant for its entirety -->
                 <div class="intro">
-                    <h2 class="display-3">Concepts</h2>
+                    <h2 class="display-3 ">Concepts</h2>
                     <!-- Carouseling the Images to shuffle through -->
                     <div id="conceptRotation" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-item active">
-                           <div  class="carousel-item"> 
+                        <div class="carousel-inner">
+                           <div  class="carousel-item active"> 
                             <img src="assets/img/placeholder1.png" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
@@ -120,12 +121,12 @@
 
         <!-- Project Sections -->
         <!-- Each Project gets its own section-->
-        <section class="page-section mb-1">
+        <section class="page-section mb-1 mt-5">
             <h class="display-3">Projects</h2>
         </section>
 
         <section class="page-section mb-5">
-            <p class="fs-3">Plant Monitor System</p>
+            <p class="fs-3 mt-1 mb-1">Plant Monitor System</p>
             <div class="container">
                 <div class="product-item">
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-01.jpg" alt="..." />
@@ -140,13 +141,13 @@
 
         <!-- Project 2: -->
         <section class="page-section mb-5">
-            <p class="fs-3">Plant Monitor System</p>
+            <p class="fs-3 mt-1 mb-1">Virtual Lab Simulation</p>
             <div class="container">
                 <div class="product-item">
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-02.jpg" alt="..." />
                     <div class="product-item-description-up d-flex ms-auto">
                         <div class="bg-faded p-5 rounded">
-                            <p class="mb-0">Junior year of undergrad, my team and I designed a plant monitoring system. It checked for tempurature, light, and soil moisture.</p>
+                            <p class="mb-0">Senior year of undergrad, I lead a team in the creation of a geotechincal engineering lab simulation. This was achieved in Unity 3D.</p>
                         </div>
                     </div>
                 </div>
