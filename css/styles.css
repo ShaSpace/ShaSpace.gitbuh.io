@@ -435,6 +435,10 @@ legend + * {
   clear: left;
 }
 
+::-webkit-scrollbar-track{background-color: #31355c;}
+::-webkit-scrollbar-thumb{background-color: #53598f;}
+::-webkit-scrollbar-thumb:hover{background-color: #7d86db;}
+
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
