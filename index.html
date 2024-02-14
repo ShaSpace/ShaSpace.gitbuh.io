@@ -16,23 +16,17 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Vertical Carousel -->
+        <link href="css/vertical-carousel.css" rel="vertical-carousel" />
+
     </head>
 
     <!-- NOTE: What's in quotes is a reference to the styles.css file.-->
     <!-- NOTE cont: The styles file has the format, and this file uses the format. If you want to create a new format... -->
     <!-- NOTE cont: then you have to create a format within the styles file and then come back here to reference it.-->
     <body>
-        <!-- I don't think I'll have a header in the final website
-        <header>
-            This the header at the top of the page 
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">Make Your Dreams A Reality</span>
-                <span class="site-heading-lower">Sha'Lynn Clarke</span>
-            </h1>
-        </header>
-        -->
         <!-- Navigation Bar-->
-        <nav class="navbar fixed-top navbar-dark py-lg-5" id="mainNav">
+        <nav class="navbar fixed-top navbar-light py-lg-5" id="mainNav">
             <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
             <a class="navbar-brand text-uppercase fw-bold ps-5" href="index.html">Sha Space</a>
             <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -49,199 +43,36 @@
             </div>
         </nav>
 
-        <!-- The following splits up the webiste into different sections -->
-        <!-- PRE EDIT: The intro section of the site with the photo and text box -->
-
-        <!-- Section 0: Really Serves as an Intro to overtake the current heading&navbar -->
-        <section class="page-section mb-5">
-            <div class="containter">
-                <div class="typewriter-bg">
-                    <div class="typewriter text-white text-start">
-                        <h3 class="display-2">
-                            Let Your Ambitions Be Infinite,
-                            Make Your Dreams A Reality...
-                        </h3>  
-                    </div>
-                    <h2 class="display-1 fst-italics text-white text-start">
-                        Sha Space
-                    </h2>
-                  </div>
-            </div>
-        </section>
-
-        <!-- Concept Section of Homepage: -->
-        <section class="page-section clearfix mb-5 mt-2">
-            <div class="container"> <!-- A container with no breakpoints meaning that the width is constant for its entirety -->
-                <div class="intro">
-                    <h2 class="display-3 ">Concepts</h2>
-                    <!-- Carouseling the Images to shuffle through -->
-                    <div id="conceptRotation" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                           <div  class="carousel-item active"> 
-                            <img src="assets/img/placeholder1.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="assets/img/placeholder2.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="assets/img/placeholder3.png" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#conceptRotation" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#conceptRotation" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
-                    </div>
-
-
-
-                    <!-- Attempting to have images in a row
-                    <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item">
-                            <img class="img-thumbnail" src="assets/img/placeholder1.png"  alt="..." />
-                        </li>
-                        <li class="list-group-item">
-                            <img class="img-thumbnail" src="assets/img/placeholder2.png"  alt="..." />
-                        </li>
-                        <li class="list-group-item">
-                            <img class="img-thumbnail" src="assets/img/placeholder3.png"  alt="..." />
-                        </li>
-                    </ul>
-                    -->
-                    
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Project Sections -->
-        <!-- Each Project gets its own section-->
-        <section class="page-section mb-1 mt-5">
-            <h class="display-3">Projects</h2>
-        </section>
-
-        <section class="page-section mb-5">
-            <p class="fs-3 mt-1 mb-1">Plant Monitor System</p>
-            <div class="container">
-                <div class="product-item">
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-01.jpg" alt="..." />
-                    <div class="product-item-description-up d-flex me-auto">
-                        <div class="bg-faded p-5 rounded">
-                            <p class="mb-0">Junior year of undergrad, my team and I designed a plant monitoring system. It checked for tempurature, light, and soil moisture.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project 2: -->
-        <section class="page-section mb-5">
-            <p class="fs-3 mt-1 mb-1">Virtual Lab Simulation</p>
-            <div class="container">
-                <div class="product-item">
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-02.jpg" alt="..." />
-                    <div class="product-item-description-up d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded">
-                            <p class="mb-0">Senior year of undergrad, I lead a team in the creation of a geotechincal engineering lab simulation. This was achieved in Unity 3D.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-   
-        <!-- About Me Section of Homepage -->
-        <section class="page-section mb-5">
-            <h2 class="display-3">About Me</h2>
-            <div class="container">
-                <!-- Personal Section just basic facts -->
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <p class="text-start fs-3 text-bg-light">Sha'Lynn Clarke</p>
-                    <p class="text-start fs-3 text-bg-light">22 years old</p>
-                    <p class="text-start fs-3 text-bg-light">they/them</p>
-                </div>
-                <div class="col">
-                    <img src="assets/img/placeholder1.png" class="img-fluid">
-                </div>
-                <!-- Nothing on the right side of the picture -->
-                <div class="col"></div>
-            </div>
-                <!-- Engineering Aspects of me-->
-            <div class="row">
-                <!-- No text to the left of the image -->
-                <div class="col"></div> 
-                <div class="col d-flex justify-content-center">
-                    <img src="assets/img/placeholder2.png" class="img-fluid"/>
-                </div>
-                <div class="col">
-                    <p class="text-end fs-3 text-bg-light">Electrical & Computer Engineer</p>
-                    <p class="text-end fs-3 text-bg-light">Graduated from Rowan University 2023 cum Laude</p>
-                    <p class="text-end fs-3 text-bg-light">Sensor, Unity, and Software Work</p>
-                </div>
-            </div>
-                <!-- Artistic Aspects of me -->
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <p class="text-start fs-3 text-bg-light">I do my own animatics</p>
-                    <p class="text-start fs-3 text-bg-light">I create pieces in Blender</p>
-                    <p class="text-start fs-3 text-bg-light">I draw, paint, design</p>
-                </div>
-                <div class="col">
-                    <img src="assets/img/placeholder3.png" class="img-fluid"/>
-                </div>
-                <!-- No text to the right of the image -->
-                <div class="col"></div>
-            </div>
-        </div>
-        
-        
-        <!-- Navigation Options at the Bottom of Page-->
-        <section class="page-section mb-5">
-            <h2 class="display-4">Explore</h2>
-            <!--Positioning the Buttons w/o a Grid-->
-            <div class="position-relative">
-                <div class="position-absolute start-0 translate-middle">
-                    <a href="store.html"><img src="assets/img/placeholder1.png" class="rounded-circle" alt="..."></a>
-                </div>
-                <div class="position-absolute start-50 translate-middle">
-                    <a href="products.html"><img src="assets/img/placeholder2.png" class="rounded-circle" alt="..."></a>
-                </div>
-                <div class="position-absolute end-0 translate-middle">
-                    <a href="about.html"><img src="assets/img/placeholder3.png" class="rounded-circle" alt="..."></a>
-                </div>
-            </div>
-        <!-- Commenting the following out to Test something else:
-            Setting up the grid: 
-            <div class="gird gap-3">
-                lickable Images 
-                <div class="row">
-                    <div class="circular-landscape"> Sizing the Button
-                             Concepts Button
-                        <div class="col"><a href="store.html"><img src="assets/img/placeholder1.png" class="rounded-circle" alt="..."></a></div>
-                        Projects Button
-                        <div class="col"><a href="products.html"><img src="assets/img/placeholder2.png" class="rounded-circle" alt="..."></a></div>
-                        <-- About Me Button->
-                        <div class="col"><a href="about.html"><img src="assets/img/placeholder3.png" class="rounded-circle" alt="..."></a></div>
-                    </div>
-                </div>
-               
-                <!- Labels for the buttons->
-                <div class="row">
-                    <div class="col"><p class="text-center text-white fs-3 fw-bold">Concepts</p></div>
-                    <div class="col"><p class="text-center text-white fs-3 fw-bold">Projects</p></div>
-                    <div class="col"><p class="text-center text-white fs-3 fw-bold">About Me</p></div>
-                </div>
-            </div>
-            End of Comment
+        <!-- Vertical Carousel -->
+        <!--
+            After working with this code and attempting to get the intro I wanted, I found that having a vertical carousel would be better for the homepage.
+            The homepage will be one big vertical carousel to have a cleaner look and easier user experience.
+            Videos will be implented instead of attempting to code the visuals I desire.
         -->
-        </section>
-    </section>    
-        
+
+        <div id="carouselHomePage" class="carousel slide vertical" data-bs-ride="false">
+            <!-- Setting the indicators up. -->
+            <ol class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="2" class="active" aria-current="true" aria-lavel="Slide 3"></button>
+            </ol>
+            <!-- Putting Content in Each Slide -->
+            <div class="carousel-inner">
+                <!-- Intro Video -->
+                <div class="carousel-item active embed-responsive">
+                    <video class="object-fit-fill embed-responsive-item min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
+                </div>
+                <!-- Concept Video -->
+                <div class="carousel-inner active embed-responsive">
+                    <video class="object-fit-fill embed-responsive-item min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
+                </div>
+                <!-- Project Video -->
+                <div class="carousel-inner active embed-responsive">
+                    <video class="object-fit-fill embed-responsive-item min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
+                </div>
+            </div>
+        </div>  
 
         <!-- The end of the page with the copyright -->
         <footer class="footer text-faded text-center py-2">

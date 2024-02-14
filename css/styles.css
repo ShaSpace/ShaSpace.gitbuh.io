@@ -5819,7 +5819,7 @@ textarea.form-control-lg {
 .carousel-item {
   position: relative;
   display: none;
-  float: left;
+  float: none;
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
@@ -10905,7 +10905,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: transparent /*-->rgba(47, 23, 15, 0)**/;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
