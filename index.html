@@ -26,7 +26,7 @@
     <!-- NOTE cont: then you have to create a format within the styles file and then come back here to reference it.-->
     <body>
         <!-- Navigation Bar-->
-        <nav class="navbar fixed-top navbar-light py-lg-5" id="mainNav">
+        <nav class="navbar fixed-top navbar-dark py-lg-5 border-bottom border-white" id="mainNav">
             <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
             <a class="navbar-brand text-uppercase fw-bold ps-5" href="index.html">Sha Space</a>
             <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -54,22 +54,22 @@
             <!-- Setting the indicators up. -->
             <ol class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="1" class="active" aria-current="true" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="2" class="active" aria-current="true" aria-lavel="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="1" aria-current="true" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="2" aria-current="true" aria-label="Slide 3"></button>
             </ol>
             <!-- Putting Content in Each Slide -->
             <div class="carousel-inner">
                 <!-- Intro Video -->
                 <div class="carousel-item active embed-responsive">
-                    <video class="embed-responsive-item min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
+                    <video class="min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
                 </div>
                 <!-- Concept Video -->
-                <div class="carousel-inner active embed-responsive">
-                    <video class="embed-responsive-item min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
+                <div class="carousel-inner embed-responsive">
+                    <video class="min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
                 </div>
                 <!-- Project Video -->
-                <div class="carousel-inner active embed-responsive">
-                    <video class="embed-responsive-item min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
+                <div class="carousel-inner embed-responsive">
+                    <video class="min-vh-100" src="..." muted loop autoplay playsinline="true"></video>
                 </div>
             </div>
         </div>  
