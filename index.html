@@ -26,7 +26,7 @@
     <!-- NOTE cont: then you have to create a format within the styles file and then come back here to reference it.-->
     <body>
         <!-- Navigation Bar-->
-        <nav class="navbar fixed-top navbar-dark py-lg-5 border-bottom border-white" id="mainNav">
+        <nav class="navbar fixed-top navbar-dark py-2 border-bottom border-white" id="mainNav">
             <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
             <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html">Sha Space</a>
             <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -49,7 +49,7 @@
             The homepage will be one big vertical carousel to have a cleaner look and easier user experience.
             Videos will be implented instead of attempting to code the visuals I desire.
         -->
-
+    <div class="container-fluid px-0">
         <div id="carouselHomePage" class="carousel slide vertical" data-bs-ride="false">
             <!-- Setting the indicators up. -->
             <ol class="carousel-indicators">
@@ -60,19 +60,20 @@
             <!-- Putting Content in Each Slide -->
             <div class="carousel-inner">
                 <!-- Intro Video -->
-                <div class="carousel-item active embed-responsive">
+                <div class="carousel-item active">
                     <video class="min-vh-100" src="https://placehold.co/1920x1080.mp4" muted loop autoplay playsinline="true"></video>
                 </div>
                 <!-- Concept Video -->
-                <div class="carousel-inner embed-responsive">
+                <div class="carousel-item">
                     <video class="min-vh-100" src="https://placehold.co/1920x1080/red/white.mp4" muted loop autoplay playsinline="true"></video>
                 </div>
                 <!-- Project Video -->
-                <div class="carousel-inner embed-responsive">
+                <div class="carousel-item">
                     <video class="min-vh-100" src="https://placehold.co/3840x2160.mp4?text=Hello+World" muted loop autoplay playsinline="true"></video>
                 </div>
             </div>
-        </div>  
+        </div>
+    </div>  
 
         <!-- The end of the page with the copyright -->
         <footer class="footer text-faded text-center py-2">
