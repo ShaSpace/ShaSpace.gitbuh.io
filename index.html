@@ -36,8 +36,8 @@
                     <!-- These classes define the tabs of the website ie: HOME, ABOUT, PROJECTS, CONCEPTS, CONTACT -->
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="products.html">Projects</a></li>
-                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="store.html">Concepts</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="projects.html">Projects</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="concepts.html">Concepts</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -49,31 +49,37 @@
             The homepage will be one big vertical carousel to have a cleaner look and easier user experience.
             Videos will be implented instead of attempting to code the visuals I desire.
         -->
-    <div class="container-fluid px-0">
-        <div id="carouselHomePage" class="carousel slide vertical" data-bs-ride="false">
-            <!-- Setting the indicators up. -->
-            <ol class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="1" aria-current="true" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="2" aria-current="true" aria-label="Slide 3"></button>
-            </ol>
-            <!-- Putting Content in Each Slide -->
-            <div class="carousel-inner">
-                <!-- Intro Video -->
-                <div class="carousel-item active">
-                    <video class="min-vh-100" src="https://placehold.co/1920x1080.mp4" muted loop autoplay playsinline="true"></video>
-                </div>
-                <!-- Concept Video -->
-                <div class="carousel-item">
-                    <video class="min-vh-100" src="https://placehold.co/1920x1080/red/white.mp4" muted loop autoplay playsinline="true"></video>
-                </div>
-                <!-- Project Video -->
-                <div class="carousel-item">
-                    <video class="min-vh-100" src="https://placehold.co/3840x2160.mp4?text=Hello+World" muted loop autoplay playsinline="true"></video>
+        <div class="container-fluid px-0">
+            <div id="carouselHomePage" class="carousel slide vertical" data-bs-ride="false">
+                <!-- Setting the indicators up. -->
+                <ol class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="1" aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="2" aria-current="true" aria-label="Slide 3"></button>
+                </ol>
+                <!-- Putting Content in Each Slide -->
+                <div class="carousel-inner">
+                    <!-- Intro Video -->
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-center min-vh-100">
+                            <video src="https://placehold.co/1920x1080.mp4" muted loop autoplay playsinline="true"></video>
+                        </div>
+                    </div>
+                    <!-- Concept Video -->
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center min-vh-100">
+                            <video src="https://placehold.co/1920x1080/red/white.mp4" muted loop autoplay playsinline="true"></video>
+                        </div>
+                    </div>
+                    <!-- Project Video -->
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center min-vh-100">
+                            <video src="https://placehold.co/1920x1080.mp4?text=Hello+World" muted loop autoplay playsinline="true"></video>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>  
+        </div>  
 
         <!-- The end of the page with the copyright -->
         <footer class="footer text-faded text-center py-2">
