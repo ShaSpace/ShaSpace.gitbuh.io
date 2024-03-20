@@ -6,23 +6,30 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 
+        <!-- Tooltips Link -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+        <!-- JQuery Library Addon -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
         <!-- Title of the Website -->
         <title>Sha Space</title>
 
-        <!-- Icon that appears next to the website name -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Icon that appears next to the website name --> 
+        <link rel="icon" type="image/x-icon" href="assets/web-icon.ico" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/ssaddons.css" rel="stylesheet" />
     </head>
 
-    <body>
+    <body class="projects">
         <!-- Navigation Bar-->
         <nav class="navbar navbar-dark py-2 border-bottom border-white" id="mainNav">
             <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
-            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html">Sha Space</a>
+            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html"><img src="assets/home button light.PNG"></a>
             <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
@@ -30,26 +37,248 @@
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="projects.html">Projects</a></li>
-                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="store.html">Concepts</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="concepts.html">Concepts</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- Title of the section -->
-        <h1 class="display-2 text-center m3 text-white"><em> Projects </em></h1>
+        <h1 class="display-2 text-center mt-3 mb-5 p2 text-white"><em> Projects </em></h1>
         <!-- Preview of Projects -->
-        <div class="container-fluid d-flex">
-            <div class="row gx-5 align-items-center">
-                <div class="col-sm"><img src="https://placehold.co/300x200?text=Plant+Monitor"></div>
-                <div class="col-sm"><img src="https://placehold.co/300x200?text=Geo-Technical+Lab+Simulation"></div>
-                <div class="w-100"></div>
-                <div class="col-sm"><img src="https://placehold.co/300x200?text=Blender+Donut"></div>
-                <div class="col-sm"><img src="https://placehold.co/300x200?text=IoT+Project"></div>
-                <div class="w-100"></div>
-                <div class="col-sm"><img src="https://placehold.co/300x200?text=Blender+Brownie"></div>
-                <div class="col-sm"><img src="https://placehold.co/300x200?text=4+Bit+Odd+Parity"></div>
+        <div class="container">
+            <div class="row mb-3 justify-content-between">
+                <!-- Plant Monitor -->
+                <div class="col-md-4 position-relative">
+                    <img src="assets/Project Page/plant monitor thumbnail.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#PMmodal" style="cursor: pointer;">
+                    <h2 class="text-wrap text-bg-light fw-bold position-absolute top-50 start-50 translate-middle">Plant Monitor</h2>
+                </div>
+                <!-- Geo-Technical Lab Simulation -->
+                <div class="col-md-4 position-relative">
+                    <img src="assets/Project Page/GTLS-Thumbnail.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#GTLSmodal" style="cursor: pointer;">
+                    <h2 class="fw-bold position-absolute top-50 start-50 translate-middle">Geo-Technical Lab Simulation</h2>
+                </div>
+            </div>
+            <div class="row mb-3 justify-content-between">
+                <!-- Blender Donut -->
+                <div class="col-md-4 position-relative">
+                    <img src="assets/Project Page/donut thumbnail.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#BDmodal" style="cursor: pointer;">
+                    <h3 class="text-white fw-bold position-absolute top-50 start-50 translate-middle">Blender Donut</h3>
+                </div>
+                <!-- IoT Project -->
+                <div class="col-md-4 position-relative">
+                    <img src="assets/Project Page/IoT Thumbnail.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#IoTmodal" style="cursor: pointer;">
+                    <h2 class="text-white fw-bold position-absolute top-50 start-50 translate-middle">Internet of Things Project</h2>
+                </div>  
+            </div>
+            <div class="row mb-3 justify-content-between">
+                <!-- Blender Brownie -->
+                <div class="col-md-4 position-relative">
+                    <img src="assets/Project Page/brownie thumbnail.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#BBmodal" style="cursor: pointer;">
+                    <h4 class="text-white fw-bold position-absolute top-50 start-50 translate-middle">Blender Brownie</h4>
+                </div>
+                <!-- 4 Bit Odd Parity -->
+                <div class="col-md-4 position-relative">
+                    <img src="assets/Project Page/FourBOP thumbnail.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#FourBPmodal" style="cursor: pointer;">
+                    <h4 class="text-white fw-bold position-absolute top-50 start-50 translate-middle">Four Bit Odd Parity</h4>
+                </div>
             </div>
         </div>
+
+        <!-- Modal Popup Declaration -->
+
+        <!-- Plant Monitor Modal -->
+        <div class="modal fade" id="PMmodal" tabindex="-1" aria-labelledby="PMmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="start-50 fw-bold modal-title fs-3" id="PMmodallabel">Plant Monitor</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                            <div class="col-md-6">
+                        <div class="carousel slide carousel-dark" id="PlantMonitorModalC">
+                            <div class="carousel-inner" data-bs-toggle="tooltip" data-bs-title="CAD by Jonathan Gallinaro">
+                                <div class="carousel-item active"><img src="assets/Project Page/PM CAD/IMG_0149.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0150.PNG" class="img-fluid" ></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0151.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0152.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0153.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0154.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0155.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0156.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0157.PNG" class="img-fluid"></div>
+                                <div class="carousel-item"><img src="assets/Project Page/PM CAD/IMG_0158.PNG" class="img-fluid"></div>
+                            </div>
+                            
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#PlantMonitorModalC" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#PlantMonitorModalC" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                        </div></div></div></div>
+                        <p class="p-3 mt-3">
+                            The Plant Monitor, is a project from my Intro to Embedded Engineering class. It is a 3D printed plant box with sensors and a PCB embedded within it.
+                            The purpose of the monitor is alert the plant owner when the plant is not receiving the correct amount of light, if it is too hot or cold, and the soil moisture level.
+                            It includes a light sensor, temperature sensor, and a moisture sensor. I handled the software side of configuring our microcontroller to the external sensors.
+                            This was done with Code Composer using C#, and my partner did the PCB design in Altium.
+                        </p>
+                    </div>
+                    <div class="modal-footer justify-content-between"><p class="start-0 fst-italic">The CAD and 3D printing was done by Jonathan Gallinaro. Check him out <a href="https://www.linkedin.com/in/jonathan-gallinaro/" target="_blank">here</a>!</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Geo-Technical Lab Simulation Modal -->
+        <div class="modal fade" id="GTLSmodal" tabindex="-1" aria-labelledby="GTLSmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="start-50 fw-bold modal-title fs-3" id="GTLSmodallabel">Geo-Technical Lab Simulation</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container d-flex justify-content-center align-content-center">
+                        <video muted controls autoplay loop playsinline="true" id="GTLSvideo">
+                            <source src="assets/Project Page/Gas Transfer Station - SampleScene - Android - Unity 2020.3.38f1 Personal _DX11_ 2023-01-16 20-39-03.mp4">
+                        </div>
+                        <p class="mt-3 p-3">
+                            The geo-technical lab simulation is a part of a project of creating an app for students interested in geo-technical engineering. I worked on this simulation during my third year of undergrad.
+                            This simulation helps provide students an example of a water cleaning technique often used in the field, through Unity's 2D gaming engine.
+                            Users can adjust the lab environment to change the outcome of the solution, this way it gives them a base understanding of the technique without
+                            the lab equipment. The modeling was done by mechanical engineering students through Blender, while I handled the coding and the placement through Unity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Blender Donut Modal -->
+        <div class="modal fade" id="BDmodal" tabindex="-1" aria-labelledby="BDmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="start-50 fw-bold modal-title fs-3" id="BDmodallabel">Blender Donut</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-4 container justify-content-center align-content-center">
+                        <video src="assets/Project Page/Blender Donut.mp4" controls autoplay loop muted class="px-2 py-2" id="BDvideo"></div>
+                        <p>
+                            This is a spinning 3D modeled donut with icing and sprinkles. I followed Blenger Guru's tutorials on YouTube to recreate his donut, and conduct a personal
+                            study on Blender's modeling capabilities. Everything was done through blender including: the modeling, the texturing, the animating, the rendering, and the sequencing of frames.
+                            It took me 3-4 weeks to complete this tutorial, due to the number and length and videos, and to reinforce my understanding of the techniques. This tutorial sparked my interest in
+                            3D modeling as a whole.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IoT Project Modal -->
+        <div class="modal fade" id="IoTmodal" tabindex="-1" aria-labelledby="IoTmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="start-50 fw-bold modal-title fs-3" id="IoTmodallabel">IoT Project</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-4 container d-flex justify-content-center align-content-center">
+                        <video src="assets/Project Page/iot video.MOV" controls autoplay muted loop class="img-fluid px-2 py-2" id="IoTvideo" data-bs-toggle="tooltip" data-bs-title="Featuring my dog Sonny C:"></div>
+                        <p>
+                            This Internet of Things, IoT, project was completed my sophomore year of undergrad during my Sophomore Engineering Clinic II class. It is a simple circut
+                            connecting a couple sensors to an Arduino board, along with a WiFi module, to send the data to ThingsSpeak.com. The two sensors used were a temperature sensor,
+                            and photoresistor. As the light and temperature of the environment changes, the graphs on the site reflected as such. I was tasked with configuring the board to external parameter
+                             connections through Arduino's IDE, connecting everything through bread board, and making sure the data reached ThingsSpeak.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blender Brownie Modal -->
+        <div class="modal fade" id="BBmodal" tabindex="-1" aria-labelledby="BBmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="start-50 fw-bold modal-title fs-3" id="BBmodallabel">Blender Brownie</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-4 container d-flex justify-content-center align-content-center">
+                        <video src="assets/Project Page/Blender Brownie.mp4" controls autoplay loop muted class="px-2 py-2" id="BBvideo"></div>
+                        <p>
+                            This is a spinning 3D model of a brownie with walnuts on a plate. After my blender donut study, I decided to apply what I learned to recreate one of my favorite desserts.
+                            The modeling, texturing, animating, sequencing, lighting, and video editing is all done through Blender. I put my own spin on it, and had the spin animation be a bit different
+                            than the tutorial. This project has inspired me to start designing my own blender animations and environment simulations to have another way of communicating my concepts
+                            and ideas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Bit Odd Parity Modal -->
+        <div class="modal fade" id="FourBPmodal" tabindex="-1" aria-labelledby="FourBPmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="start-50 fw-bold modal-title fs-3" id="FourBPmodallabel">4 Bit Odd Parity VLSI Circuit</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container d-flex justify-content-center align-content-center">
+                            <div class="carousel slide carousel-dark carousel-fade" id="FourBOP">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="assets/Project Page/VLSI/logic design.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="4-bit Odd Parity Logic Circuit"></div>
+                                    <div class="carousel-item"><img src="assets/Project Page/VLSI/final design.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="Final logic design"></div>
+                                    <div class="carousel-item"><img src="assets/Project Page/VLSI/final design calculations.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="Final design calculations"></div>
+                                    <div class="carousel-item"><img src="assets/Project Page/VLSI/folded inverter.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="Twice folded inverter on a transistor-level"></div>
+                                    <div class="carousel-item"><img src="assets/Project Page/VLSI/symbol connection.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="Symbol connection in Cadence Virtuoso"></div>
+                                    <div class="carousel-item"><img src="assets/Project Page/VLSI/layout.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="4-bit Odd Parity layout fabrication"></div>
+                                    <div class="carousel-item"><img src="assets/Project Page/VLSI/results.png" class="img-fluid" data-bs-toggle="tooltip" data-bs-title="5V pulse simulation results"></div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#FourBOP" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#FourBOP" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                            </div>
+                        </div>
+                        <p class="p-3 mt-3">
+                            The above gif shows the different steps of microchip fabrication of a 4-bit odd parity circuit. This circuit has various applications, but my favorite would be for encryption purposes.
+                            It can take a four bit input, check the numer of 1s within the sequence, and then based on the output the user or the next circuit can make a decision. All of the calculations were done
+                            by hand with the help of my TI-Nspire calculator, and the design was replicated and simulated in Cadence Virtuoso. Due to the application being hosted on a server, I had to get familiar with
+                            git commands in order to access my files and the applications. This project was my major senior project for my Very Large Scale Integration class.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- The end of the page with the copyright -->
+        <footer class="footer mt-2 text-faded text-center py-2">
+            <!-- Website/Company at the bottom of the page next to the Copyright -->
+            <div class="container"><p class="m-0 small">Copyright &copy; ShaSpace 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Project page specific script -->
+        <script src="js/projectspage.js"></script>
     </body>
 </html>

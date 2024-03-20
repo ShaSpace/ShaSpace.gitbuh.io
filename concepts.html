@@ -6,34 +6,194 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
         <!-- Title of the Website -->
         <title>Sha Space</title>
 
         <!-- Icon that appears next to the website name -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/web-icon.ico" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/ssaddons.css" rel="stylesheet" />
+
     </head>
 
-    <body>
+    <body class="concepts">
         <!-- Navigation Bar-->
         <nav class="navbar navbar-dark py-2 border-bottom border-white" id="mainNav">
             <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
-            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html">Sha Space</a>
+            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html"><img src="assets/home button light.PNG"></a>
             <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <!-- These classes define the tabs of the website ie: HOME, ABOUT, PROJECTS, CONCEPTS, CONTACT -->
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="products.html">Projects</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="projects.html">Projects</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="concepts.html">Concepts</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Dream Bubbles and Sleeping Me portion of the page -->
+        <section class="page-section">
+            <div class="container-fluid vh-100 my-5">
+                <img src="assets/Concept Page/concept cloud SR.png" class="concept-bubbleONE mx-5" onclick="scrollToSection('SmartRunway')" style="cursor: pointer;">
+                <!--<img src="assets/Concept Page/concept cloud DMI.png" class="concept-bubbleTWO mx-5" onclick="scrollToSection('DinoInteractive')" style="cursor: pointer;">--> 
+                <img src="assets/Concept Page/concept cloud VC.png" class="concept-bubbleTHREE mx-5" onclick="scrollToSection('ViewCatcher')" style="cursor: pointer;">
+                <img src="assets/Concept Page/me sleeping.PNG" class="sleeping-me mt-3">
+            </div>
+        </section>
+
+
+        <!-- Concept Explanations -->
+            
+        <!-- Smart Runway -->
+        <section id="SmartRunway" class="page-section pt-5 clearfix">
+            <div class="container">
+                <h1 class="fw-bold text-white fst-italic display-2 text-center pb-3">Smart Runway</h1>
+                <div class="concept-smallscale my-5">
+                    <img class="animatic-gif-left" src="assets/Concept Page/SR thumbnail.png" alt="..." style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#SRmodal">
+                    <div class="concept-bg animatic-explanation-right">
+                        <p>
+                            The SmartRunway is a way for stylists, designers, and those involved in the fashion world to take clothing designs to the next level. The runway senses the model position on the runway and triggers a lighting event.
+                            The runway itself may glow, either the single tile or the entire runway, or overhead lighting may trigger as well. The color of the light can be configured, and trigger at each footstep the model takes. Ideally, a venue
+                            would rent out the runway at the artists' request. Keeping that in mind, the runway would be able to break down easily for a more efficient way of travel.
+                        </p>
+                        <h3 class="fw-bold fst-italic:">Other Applications</h3>
+                        <ul>
+                            <li>
+                                <dt>Dance Floor</dt>
+                                <dd>The settings can be adjusted so that lights can trigger if anyone steps in a designated area.
+                                    This would be especially useful for themed parties to help bring in more customers, and just add to the environment in general.
+                                </dd>
+                            </li>
+                            <li>
+                                <dt>Laser Tag</dt>
+                                <dd>Laser tag is already an activity that rely heavily on the balance between light and dark. With the Smart Runway application
+                                    venues can figure the runway to light up when someone is out, or just to add another element to the activity.
+                                </dd>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- View Catcher -->
+        <section class="page-section pt-5 clearfix" id="ViewCatcher">
+            <div class="container">
+                <h1 class="fw-bold text-white fst-italic display-2 text-center pb-3">View Catcher</h1>
+                <div class="concept-smallscale my-5">
+                    <img class="animatic-gif-right" src="assets/Concept Page/VC thumbnail.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#VCmodal">
+                    <div class="concept-bg animatic-explanation-left">
+                        <p class="fs-5">
+                            The idea behind the View Catcher, is to redirect a person's attention to the object of attraction. For example, take an art exhibit with shiny or reflective material. As a visitor walks by,
+                            the motion would trigger a light to shine on the exhibit. The reflection would catch the person's attention, giving the exhibit viewing time. It would also help the visitor feel more apart of the experience,
+                            they could walk back and forth to see at least two different versions of the art piece. 
+                        </p>
+                        <h3 class="fw-bold fst-italic:">Other Applications</h3>
+                        <ul>
+                            <li>
+                                <dt class="fs-5">Entertainment</dt>
+                                <dd class="fs-5">I think adding this to indoor mazes, or perhaps a horror attraction would be a cool application for the View Catcher. If someone is standing still but see the lights
+                                    activate they would know someone is coming and it would further the experience.
+                                </dd>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal Definitions -->
+
+            <!-- Smart Runway Modal -->
+        <div class="modal fade" id="SRmodal" tabindex="-1" aria-labelledby="SRmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="fw-modal modal-title fs-3" id="SRmodallabel">Smart Runway imagined via Animatic</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <video class="rounded align-content-center justify-content-center" autoplay controls muted loop>
+                                <source src="assets/Concept Page/Smart Runway.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- View Catcher Modal -->
+        <div class="modal fade" id="VCmodal" tabindex="-1" aria-labelledby="VSmodallabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="fw-modal modal-title fs-3" id="VSmodallabel">View Catcher Minecraft Demonstration</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <video class="rounded align-content-center justify-content-center" autoplay controls muted loop>
+                                <source src="assets/Concept Page/View Catcher.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Dino Interactive
+        <section class="page-section pt-5 clearfix" id="DinoInteractive">
+            <div class="container">
+                <h1 class="fw-bold text-white fst-italic display-2 text-center pb-3">Dino Interactive</h1>
+                <div class="concept-smallscale my-5">
+                    <img class="animatic-gif-left" src="https://placehold.co/400x400?text=Animation" alt="...">
+                    <div class="concept-bg animatic-explanation-right">
+                        <p>
+                            The SmartRunway is a way for stylists, designers, and those involved in the fashion world to take clothing designs to the next level. The runway senses the model position on the runway and triggers a lighting event.
+                            The runway itself may glow, either the single tile or the entire runway, or overhead lighting may trigger as well. The color of the light can be configured, and trigger at each footstep the model takes. Ideally, a venue
+                            would rent out the runway at the artists' request. Keeping that in mind, the runway would be able to break down easily for a more efficient way of travel.
+                        </p>
+                        <h3 class="fw-bold fst-italic:">Other Applications</h3>
+                        <ul>
+                            <li>
+                                <dt>Dance Floor</dt>
+                                <dd>The settings can be adjusted so that lights can trigger if anyone steps in a designated area.
+                                    This would be especially useful for themed parties to help bring in more customers, and just add to the environment in general.
+                                </dd>
+                            </li>
+                            <li>
+                                <dt>Laser Tag</dt>
+                                <dd>Laser tag is already an activity that rely heavily on the balance between light and dark. With the Smart Runway application
+                                    venues can figure the runway to light up when someone is out, or just to add another element to the activity.
+                                </dd>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>         -->
+
+        <!-- The end of the page with the copyright -->
+        <footer class="footer text-faded text-center mt-auto py-2">
+            <!-- Website/Company at the bottom of the page next to the Copyright -->
+            <div class="container"><p class="m-0 small">Copyright &copy; ShaSpace 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
