@@ -6,67 +6,97 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
         <!-- Title of the Website -->
         <title>Sha Space</title>
 
         <!-- Icon that appears next to the website name -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/web-icon.ico" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/ssaddons.css" rel="stylesheet"/>
     </head>
     
-    <body>
-        <header>
-            <!-- This the header at the top of the page -->
+    <body class="about">
+        <!--<header>
+            This the header at the top of the page
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
                 <span class="site-heading-upper text-primary mb-3">Make Your Dreams A Reality</span>
                 <span class="site-heading-lower">Sha'Lynn Clarke</span>
             </h1>
-        </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-5" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Sha Space</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="projects.html">Projects</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="concepts.html">Concepts</a></li>
-                        <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
+        </header>-->
+
+        <!-- Navigation Bar-->
+        <nav class="navbar navbar-dark py-2 border-bottom border-white" id="mainNav">
+            <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
+            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html"><img src="assets/home button light.PNG"></a>
+            <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <!-- These classes define the tabs of the website ie: HOME, ABOUT, PROJECTS, CONCEPTS, CONTACT -->
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="about.html">About</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="projects.html">Projects</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="concepts.html">Concepts</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Picture and Bullet Point -->
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">Make Your Dreams A Reality</span>
+            <span class="site-heading-lower">Sha'Lynn Clarke</span>
+        </h1>
+        <div class="containterms-auto me-auto mb-5" style="overflow-x: hidden;">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-sm-3 text-light fs-2 align-items-center">
+                    <ul>
+                        <li>22 years old</li>
+                        <li>They/Them</li>
+                        <li>Sicklerville, NJ, United States</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 d-flex justify-content-center"><img src="assets/About Page/IMG_2023_12_07-17_49_13_2880_36C35C9B.JPEG" class="img-fluid timeline-pic" alt="Personal Picture"></div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4 d-flex justify-content-center"><img src="assets/About Page/Eng-Me.png" class="img-fluid timeline-pic" alt="Engineering Picture"></div>
+                <div class="col-sm-3 text-light fs-2 align-items-center">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>Electrical & Computer Engineer</dt>
+                                <dd>- Rowan University</dd>
+                                <dd>- Cum Laude</dd>
+                            </dl>
+                        </li>
+                        <li>Sensor Work</li>
+                        <li>Unity Work</li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <section class="page-section about-heading">
-            <div class="container">
-                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
-                <div class="about-heading-content">
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-10 mx-auto">
-                            <div class="bg-faded rounded p-5">
-                                <h2 class="section-heading mb-4">
-                                    <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                                    <span class="section-heading-lower">About Our Cafe</span>
-                                </h2>
-                                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                                <p class="mb-0">
-                                    We guarantee that you will fall in
-                                    <em>lust</em>
-                                    with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-sm-3 text-break text-light fs-2 align-items-center">
+                    <ul>
+                        <li>Doing my own animatics</li>
+                        <li>Blender Sculptures</li>
+                        <li>Drawing/ Painting/ Sketching</li>
+                    </ul>
                 </div>
+                <div class="col-sm-4 d-flex justify-content-center"><img src="assets/About Page/Art Me.PNG" class="img-fluid timeline-pic" alt="Artistic Picture"></div>
+                <div class="col-sm-3"></div>
             </div>
-        </section>
+        </div>
+
         <footer class="footer text-faded text-center py-2">
-            <div class="container"><p class="m-0 small">Copyright &copy; ShaSpace 2023</p></div>
+            <div class="container"><p class="m-0 small">Copyright &copy; ShaSpace 2024</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

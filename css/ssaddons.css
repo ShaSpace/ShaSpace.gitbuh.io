@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* Custom Backgrounds for Each Page*/
+.index {
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about
+{
+    background: linear-gradient(#21073C, #BE8643);
+}
+
+.concepts {
+    background: linear-gradient(#07093C 5% , #286553 50%)
+}
+
+.projects {
+    background: linear-gradient(#07093C,#AB7E5D)
+}
+
+.contact{
+    background-image: linear-gradient(rgba(2,0,36,0.77) 0%, rgba(1,98,137,0.8) 74%, rgba(0,212,255,0.36) 100%), url("../assets/img/spaceBG.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Home Page Classes */
+#video-container{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Concept Page Classes */
+    /* Concept bubbles and me sleeping */
+.sleeping-me {
+    position:absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.concept-bubbleONE {
+    position: relative;
+    left: 75px;
+    top: 50px;
+}
+
+.concept-bubbleTWO {
+    position: relative;
+    left: 1160px;
+    top: 450px;
+}
+
+.concept-bubbleTHREE {
+    position: relative;
+    left: 350px;
+    top: 100px;
+}
+    /* Concept Explanation Classes */
+.concept-bg{
+    background-color: #D9D9D9;
+}
+
+.concept-smallscale{
+    position: relative;
+}
+
+
+@media(min-width: 992px) {
+    .concept-smallscale .animatic-gif-right {
+        border-radius: 0px 13px 13px 0px;
+        width:40%;
+        float:right;
+    }
+
+    .concept-smallscale .animatic-gif-left{
+        border-radius: 13px 0px 0px 13px;
+        width:40%;
+        float:left;
+    }
+    .concept-smallscale .animatic-explanation-left{
+        position: absolute;
+        width: 60%;
+        left: 0;
+        border-radius: 13px 0px 0px 13px;
+        padding: 25px;
+    }
+
+    .concept-smallscale .animatic-explanation-right{
+        position: absolute;
+        width: 60%;
+        right: 0;
+        border-radius: 0px 13px 13px 0px;
+        padding: 24.5px;
+    }
+}
+
+
+
+
+/*.timeline {
+    position: relative;
+    width: 100%;
+}
+
+.timeline-event {
+    position: relative;
+    display: grid;
+    grid-template-rows:'header' 'main' 'footer';
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-pic {
+    grid-template-rows: 'main';
+}
+
+.timeline-fact-top {
+    grid-template-rows: 'header';
+}
+
+.timeline-fact-bottom {
+    grid-template-rows: 'footer';
+}
+
+#fact-top{
+    bottom: -30px;
+}
+
+#fact-bottom{
+    bottom: 30px;
+}
+
+.timeline-fact::before{
+    content: ''; /* Adds content to the 'before' part of the timeline-fact 
+    position: absolute; /* Serves as an anchor for the line 
+    display: block; /* Physical block 
+    background-color: #007bff;
+}
+
+.timeline-event > .timeline-fact {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+}*/

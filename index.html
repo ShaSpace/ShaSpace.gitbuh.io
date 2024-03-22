@@ -6,11 +6,16 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         
+        <!-- Tooltips Link -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
         <!-- Name of the Website -->
         <title>Sha Space</title>
 
         <!-- Icon that appears next to the website name -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/web-icon.ico" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
@@ -18,17 +23,18 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Vertical Carousel -->
         <link href="css/vertical-carousel.css" rel="stylesheet" />
+        <link href="css/ssaddons.css" rel="stylesheet" />
 
     </head>
 
     <!-- NOTE: What's in quotes is a reference to the styles.css file.-->
     <!-- NOTE cont: The styles file has the format, and this file uses the format. If you want to create a new format... -->
     <!-- NOTE cont: then you have to create a format within the styles file and then come back here to reference it.-->
-    <body>
+    <body class="index">
         <!-- Navigation Bar-->
         <nav class="navbar fixed-top navbar-dark py-2 border-bottom border-white" id="mainNav">
             <!-- If the whole webpage can't fit on the screen (windowed, or mobile) this is what is displayed -->
-            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html">Sha Space</a>
+            <a class="navbar-brand text-uppercase fw-bold ps-2" href="index.html"><img src="assets/home button light.PNG"></a>
             <button class="navbar-toggler ms-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
@@ -53,39 +59,49 @@
             <div id="carouselHomePage" class="carousel slide vertical" data-bs-ride="false">
                 <!-- Setting the indicators up. -->
                 <ol class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="1" aria-current="true" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide="2" aria-current="true" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
                 </ol>
                 <!-- Putting Content in Each Slide -->
                 <div class="carousel-inner">
                     <!-- Intro Video -->
-                    <div class="carousel-item active">
-                        <div class="d-flex align-items-center justify-content-center min-vh-100">
-                            <video src="https://placehold.co/1920x1080.mp4" muted loop autoplay playsinline="true"></video>
+                    <div id="video-container" class="carousel-item active">
+                        <!-- "d-flex" makes the scrollbar disappear, "align-items-center"  -->
+                        <div class="d-flex align-items-center justify-content-center vh-100">
+                            <video class="flex-fill" muted autoplay loop playsinline="true">
+                                <source src="assets/Home Page/ShaSpace Intro.m4v">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <!-- Concept Video -->
                     <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-center min-vh-100">
-                            <video src="https://placehold.co/1920x1080/red/white.mp4" muted loop autoplay playsinline="true"></video>
+                        <div class="d-flex align-items-center justify-content-center vh-100">
+                            <video class="flex-fill" muted loop playsinline="true">
+                                <source src="assets/Home Page/Concepts Intro.mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <!-- Project Video -->
                     <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-center min-vh-100">
-                            <video src="https://placehold.co/1920x1080.mp4?text=Hello+World" muted loop autoplay playsinline="true"></video>
+                        <div class="d-flex align-items-center justify-content-center vh-100">
+                            <video class="flex-fill" muted loop playsinline="true">
+                                <source src="assets/Home Page/Projects 2.mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>
             </div>
         </div>  
 
-        <!-- The end of the page with the copyright -->
+        <!-- The end of the page with the copyright
         <footer class="footer text-faded text-center py-2">
-            <!-- Website/Company at the bottom of the page next to the Copyright -->
+            Website/Company at the bottom of the page next to the Copyright
             <div class="container"><p class="m-0 small">Copyright &copy; ShaSpace 2023</p></div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

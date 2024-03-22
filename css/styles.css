@@ -5252,7 +5252,7 @@ textarea.form-control-lg {
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
-  --bs-modal-bg: #fff;
+  --bs-modal-bg: #D9D9D9;
   --bs-modal-border-color: var(--bs-border-color-translucent);
   --bs-modal-border-width: 1px;
   --bs-modal-border-radius: 0.5rem;
@@ -5261,7 +5261,7 @@ textarea.form-control-lg {
   --bs-modal-header-padding-x: 1rem;
   --bs-modal-header-padding-y: 1rem;
   --bs-modal-header-padding: 1rem 1rem;
-  --bs-modal-header-border-color: var(--bs-border-color);
+  --bs-modal-header-border-color: #BCBCBC /*var(--bs-border-color)*/;
   --bs-modal-header-border-width: 1px;
   --bs-modal-title-line-height: 1.5;
   --bs-modal-footer-gap: 0.5rem;
@@ -10838,13 +10838,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* This changes the background of the whole website */
-body {
+
+/* This changes the background of the whole website 
+body{
   background-image: linear-gradient(rgba(2,0,36,0.77) 0%, rgba(1,98,137,0.8) 74%, rgba(0,212,255,0.36) 100%), url("../assets/img/spaceBG.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-}
+}*/
 
 p {
   line-height: 1.75;
